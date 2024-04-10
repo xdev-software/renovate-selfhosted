@@ -4,5 +4,5 @@
 Self-hosted renovate using GitHub Actions
 
 ## How to use this?
-* Create a [configuration file](https://docs.renovatebot.com/configuration-options/) inside the repo
-  * [A templates is available](./template)
+* Add the ``Dependency Updates`` team to your repo
+* Create a [configuration file](https://docs.renovatebot.com/configuration-options/) inside the repo (have a look at this repo for an example)
