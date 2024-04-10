@@ -1,0 +1,14 @@
+{ 
+  "gitAuthor": "XDEV Renovate Bot <renovate@xdev-software.de>",
+  "onboarding": false,
+  "platform": "github",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 20,
+  "autodiscover": true,
+  "autodiscoverFilter": [ "xdev-software/*" ],
+  "hostRules": {
+    "concurrentRequestLimit": 500,
+    "maxRequestsPerSecond": 200,
+    "enableHttp2": true
+  }
+}
