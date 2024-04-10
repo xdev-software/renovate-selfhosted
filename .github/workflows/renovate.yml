@@ -90,6 +90,7 @@ jobs:
           # https://docs.renovatebot.com/self-hosted-experimental/#renovate_experimental_no_maven_pom_check
           # https://github.com/renovatebot/renovate/discussions/27768
           RENOVATE_EXPERIMENTAL_NO_MAVEN_POM_CHECK: '1'
+          RENOVATE_GIT_PRIVATE_KEY: ${{ secrets.RENOVATE_GIT_PRIVATE_KEY }}
 
       # Compression helps performance in the upload step!
       - name: Compress renovate cache
