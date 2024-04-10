@@ -44,11 +44,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Cache Docker images
-        uses: ScribeMD/docker-cache@0.5.0
-        with:
-          key: docker-${{ runner.os }}-${{ hashFiles('.github/workflows/renovate.yml') }}
-
       # This third party action allows you to download the cache artifact from different workflow runs
       # Note that actions/cache doesn't work well because the cache key would need to be computed from
       # a file within the cache, meaning there would never be any data to restore. With other keys, the
