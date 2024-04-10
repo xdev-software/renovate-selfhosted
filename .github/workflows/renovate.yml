@@ -79,7 +79,7 @@ jobs:
           sudo chown -R runneradmin:root /tmp/renovate/
           ls -R $cache_dir
 
-      - uses: renovatebot/github-action@v40.1.8
+      - uses: renovatebot/github-action@v40.1.7
         with:
           configurationFile: self-hosted.json5
           token: ${{ secrets.GH_TOKEN }}
@@ -90,8 +90,6 @@ jobs:
           # https://docs.renovatebot.com/self-hosted-experimental/#renovate_experimental_no_maven_pom_check
           # https://github.com/renovatebot/renovate/discussions/27768
           RENOVATE_EXPERIMENTAL_NO_MAVEN_POM_CHECK: '1'
-          # TODO
-          RENOVATE_DRY_RUN: 'full'
 
       # Compression helps performance in the upload step!
       - name: Compress renovate cache
