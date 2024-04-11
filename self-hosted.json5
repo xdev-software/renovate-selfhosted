@@ -3,7 +3,7 @@
   "onboarding": false,
   "platform": "github",
   "prHourlyLimit": 0,
-  "prConcurrentLimit": 20,
+  "prConcurrentLimit": 10,
   "autodiscover": true,
   "autodiscoverFilter": [
     "xdev-software/*"
