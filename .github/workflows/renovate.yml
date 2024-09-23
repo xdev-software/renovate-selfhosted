@@ -20,8 +20,10 @@ on:
         options:
           - INFO
           - DEBUG
+      repositories:
+        description:  'Specify the exact repositories to run on'
   schedule:
-    - cron: '5 2 * * *'
+    - cron: '6 2 * * *'
 
 permissions: 
   actions: read
@@ -91,6 +93,8 @@ jobs:
           # https://github.com/renovatebot/renovate/discussions/27768
           RENOVATE_EXPERIMENTAL_NO_MAVEN_POM_CHECK: '1'
           RENOVATE_GIT_PRIVATE_KEY: ${{ secrets.RENOVATE_GIT_PRIVATE_KEY }}
+          RENOVATE_AUTODISCOVER: ${{ github.event.inputs.repositories != null && 'false' || 'true' }}
+          RENOVATE_REPOSITORIES: ${{ github.event.inputs.repositories }}
 
       # Compression helps performance in the upload step!
       - name: Compress renovate cache
