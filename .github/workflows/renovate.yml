@@ -21,7 +21,7 @@ on:
           - INFO
           - DEBUG
       repositories:
-        description:  'Specify the exact repositories to run on'
+        description: 'Specify the exact repositories to run on'
   schedule:
     - cron: '6 2 * * *'
 
