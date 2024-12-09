@@ -81,7 +81,7 @@ jobs:
           sudo chown -R 12021:0 /tmp/renovate/
           ls -R $cache_dir
 
-      - uses: renovatebot/github-action@v41.0.5
+      - uses: renovatebot/github-action@v41.0.6
         with:
           configurationFile: self-hosted.json5
           token: ${{ secrets.GH_TOKEN }}
