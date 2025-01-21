@@ -6,7 +6,8 @@
   "prConcurrentLimit": 10,
   "autodiscover": true,
   "autodiscoverFilter": [
-    "xdev-software/*"
+    "xdev-software/*",
+    "RapidClipse/*"
   ],
   "hostRules": [
     {
