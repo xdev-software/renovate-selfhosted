@@ -53,7 +53,7 @@ jobs:
           path: ${{ env.cache_dir }}
           key: ${{ env.cache_key }}
 
-      - name: Try fix cache perimssions
+      - name: Try fix cache permissions
         if: ${{ steps.cache-restore.outputs.cache-hit }}
         continue-on-error: true
         run: |
