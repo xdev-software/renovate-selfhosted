@@ -27,7 +27,7 @@ on:
 
 permissions: 
   actions: read
-  contents: read
+  contents: write # Required to delete existing cache
 
 # Adding these as env variables makes it easy to re-use them in different steps and in bash.
 env:
