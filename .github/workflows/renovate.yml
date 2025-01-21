@@ -26,8 +26,8 @@ on:
     - cron: '6 2 * * *'
 
 permissions: 
-  actions: read
-  contents: write # Required to delete existing cache
+  actions: write # Required to delete existing cache
+  contents: read 
 
 # Adding these as env variables makes it easy to re-use them in different steps and in bash.
 env:
