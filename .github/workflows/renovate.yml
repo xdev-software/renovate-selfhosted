@@ -84,7 +84,7 @@ jobs:
       - name: Delete previous cache
         if: ${{ github.event.inputs.repoCache != 'disabled' && steps.cache-restore.outputs.cache-hit }}
         continue-on-error: true
-        run: gh cache delete "${{ env.cache_key }}" --confirm
+        run: gh cache delete "${{ env.cache_key }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
