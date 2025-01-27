@@ -23,7 +23,7 @@ on:
       repositories:
         description: 'Specify the exact repositories to run on'
   schedule:
-    - cron: '6 2 * * *'
+    - cron: '6 4 * * *'
 
 permissions: 
   actions: write # Required to delete existing cache
