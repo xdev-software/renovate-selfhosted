@@ -77,6 +77,10 @@ jobs:
           RENOVATE_GIT_PRIVATE_KEY: ${{ secrets.RENOVATE_GIT_PRIVATE_KEY }}
           RENOVATE_AUTODISCOVER: ${{ github.event.inputs.repositories != null && 'false' || 'true' }}
           RENOVATE_REPOSITORIES: ${{ github.event.inputs.repositories }}
+          # Use Docker's default API as it can be controlled using ``dockerMaxPages``
+          # https://docs.renovatebot.com/self-hosted-experimental/#renovate_x_docker_hub_tags_disable
+          # https://github.com/renovatebot/renovate/discussions/31456
+          RENOVATE_X_DOCKER_HUB_TAGS_DISABLE: '1'
 
       - name: Delete previous cache
         if: ${{ github.event.inputs.repoCache != 'disabled' && steps.cache-restore.outputs.cache-hit }}
