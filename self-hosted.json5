@@ -11,8 +11,7 @@
   "hostRules": [
     {
       "concurrentRequestLimit": 500,
-      "maxRequestsPerSecond": 200,
-      "enableHttp2": true
+      "maxRequestsPerSecond": 200
     }
   ]
 }
