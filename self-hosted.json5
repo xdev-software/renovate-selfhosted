@@ -13,5 +13,8 @@
       "concurrentRequestLimit": 500,
       "maxRequestsPerSecond": 200
     }
-  ]
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": false
+  }
 }
